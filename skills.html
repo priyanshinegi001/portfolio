@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Priyanshi Negi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #1e1e1e; /* Original sidebar color */
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .infoContainer {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .infoContainer h1 {
+            color: #1e1e1e; /* Title color */
+        }
+
+        .infoContainer h2 {
+            color: #1e1e1e; /* Sub-title color */
+        }
+
+        .infoContainer .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .infoContainer .skill-category h3 {
+            color: #1e1e1e; /* Section title color */
+            border-bottom: 2px solid #1e1e1e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .infoContainer .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .infoContainer .skill-list .skill-card {
+            background: #e0e0e0; /* Light grey background */
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 calc(50% - 20px); /* Two columns layout with gap */
+            box-sizing: border-box;
+            min-width: 250px; /* Ensure minimum width */
+        }
+
+        .footer {
+            background: #1e1e1e; /* Original footer color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer h3 {
+            margin: 10px 0;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer ul li {
+            display: inline;
+        }
+
+        .footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-rights {
+            background: #1e1e1e; /* Darker footer background for copyright */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+
+            .sidebar nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="intro.html">My Intro</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <section class="infoContainer">
+                <h1>Skills</h1>
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-card">
+                            <h4>Programming Languages</h4>
+                            <p>Java, C</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Operating Systems</h4>
+                            <p>Windows, Linux</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Software</h4>
+                            <p>MS Office (Excel, PowerPoint, Word), Google Suite (Sheets, Docs, Slides), VSCode, Eclipse IDE, IntelliJ IDEA</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Database</h4>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Other</h4>
+                            <p>Command Line Interface, IBM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-card">
+                            <h4>Leadership</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Communication</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Problem Solving</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Decision Making</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Team Management</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Organization and Time Management</h4>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Teamwork</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <h3>Priyanshi's Personal Portfolio</h3>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="intro.html">My Intro</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+        <p class="footer-rights">Copyright &#169; priyanshisportfolio.com | All rights reserved</p>
+    </footer>
+</body>
+
+</html>
